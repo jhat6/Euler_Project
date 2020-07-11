@@ -5,6 +5,7 @@
 using namespace std;
 
 int main(){    
+<<<<<<< HEAD
 	unsigned __int64 a = 0;
 	int count;
 	// find triangle numbers
@@ -17,12 +18,29 @@ int main(){
 		for (int j = 1; j <= round(sqrt(a)); j++) {
 			if (a%j < 10e-8){
 				count += 2;
+=======
+	unsigned long a = 0;
+	int count;
+	// find triangle numbers
+    for (int i = 1; i < 10000; i++){
+		a += i;
+		//cout << a << ":" << ' ';
+		count = 0;
+		// for each triangle number find its factors
+		for (int j = 1; j <= a; j++) {
+			if (a%j < 10e-8){
+				count += 1;
+>>>>>>> 22072016a42e4fef6b863d42fb5ebea3d7a70816
 				//cout << j << ' ';
 			}				
 		}
 		//cout << endl;	
 		//cout << "count: " << count << endl;
+<<<<<<< HEAD
 		if (count > 500) {break;} 
+=======
+		if (count > 320) {break;} 
+>>>>>>> 22072016a42e4fef6b863d42fb5ebea3d7a70816
 	}   
 	cout << "triangle number = " << a << endl;
 	cout << "count: " << count << endl;
